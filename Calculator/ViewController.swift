@@ -15,6 +15,8 @@ class ViewController: UIViewController {
     var number1: Int = 0
     var number2: Int = 0
     var operation: Int = 0
+    var beforeButton: String = ""
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,22 +28,45 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
     @IBAction func pushedNum(id: AnyObject) {
-        number1 = id.tag
-        resultLabel.text = String(number1)
+        if beforeButton != "equal"{
+            number1 = number1 * 10
+            number1 = number1 + id.tag
+            resultLabel.text = String(number1)
+        } else {
+            number1 = id.tag
+            resultLabel.text = String(number1)
+        }
+        
+        beforeButton = "number"
+        
+        let pushedButton: UIButton = id as! UIButton
+        pushedButton.backgroundColor = UIColor(red: 243/255, green: 123/255, blue: 123/255, alpha: 1.0)
     }
     
-    @IBAction func pushedZero() {
+    @IBAction func pushedZero(id: AnyObject) {
+        if beforeButton != "equal" {
         number1 = number1 * 10
         resultLabel.text = String(number1)
+        }
+        
+        beforeButton = "number"
+        let pushedButton: UIButton = id as! UIButton
+        pushedButton.backgroundColor = UIColor(red: 243/255, green: 123/255, blue: 123/255, alpha: 1.0)
     }
     
     @IBAction func pushedOperator(id: AnyObject) {
         operation = id.tag
-        number2 = number1
-        number1 = 0
+        if number2 == 0{
+            number2 = number1
+            number1 = 0
+        }
+        
+        let pushedButton: UIButton = id as! UIButton
+        pushedButton.backgroundColor = UIColor(red: 243/255, green: 123/255, blue: 123/255, alpha: 1.0)
+        
         switch operation {
         case 1:
             //puls
@@ -65,7 +90,11 @@ class ViewController: UIViewController {
 
     }
     
-    @IBAction func pushedEqual() {
+    @IBAction func pushedEqual(id: AnyObject) {
+        beforeButton = "equal"
+        let pushedButton: UIButton = id as! UIButton
+        pushedButton.backgroundColor = UIColor(red: 243/255, green: 123/255, blue: 123/255, alpha: 1.0)
+        
         switch operation {
         case 1:
             //puls
@@ -92,12 +121,20 @@ class ViewController: UIViewController {
         }
     }
     
-    @IBAction func pushedAC() {
+    @IBAction func pushedAC(id: AnyObject) {
+        let pushedButton: UIButton = id as! UIButton
+        pushedButton.backgroundColor = UIColor(red: 243/255, green: 123/255, blue: 123/255, alpha: 1.0)
+        
         resultLabel.text = "0"
         operationLabel.text = ""
         number1 = 0
         number2 = 0
         operation = 0
+    }
+    
+    @IBAction func changeColor(id: AnyObject) {
+        let pushedButton: UIButton = id as! UIButton
+        pushedButton.backgroundColor = UIColor.orangeColor()
     }
 }
 

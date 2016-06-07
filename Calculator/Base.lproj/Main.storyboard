@@ -34,6 +34,7 @@
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="40"/>
                                 <state key="normal" title="1"/>
                                 <connections>
+                                    <action selector="changeColor:" destination="BYZ-38-t0r" eventType="touchDown" id="rZX-cl-4xM"/>
                                     <action selector="pushedNum:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QpW-x1-odH"/>
                                 </connections>
                             </button>
@@ -46,6 +47,7 @@
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="40"/>
                                 <state key="normal" title="2"/>
                                 <connections>
+                                    <action selector="changeColor:" destination="BYZ-38-t0r" eventType="touchDown" id="kgM-1r-6ym"/>
                                     <action selector="pushedNum:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j85-mw-yGB"/>
                                 </connections>
                             </button>
@@ -58,6 +60,7 @@
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="40"/>
                                 <state key="normal" title="3"/>
                                 <connections>
+                                    <action selector="changeColor:" destination="BYZ-38-t0r" eventType="touchDown" id="8xB-FR-34s"/>
                                     <action selector="pushedNum:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bvQ-Qc-94w"/>
                                 </connections>
                             </button>
@@ -70,6 +73,7 @@
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="40"/>
                                 <state key="normal" title="4"/>
                                 <connections>
+                                    <action selector="changeColor:" destination="BYZ-38-t0r" eventType="touchDown" id="mNi-Qb-Adp"/>
                                     <action selector="pushedNum:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZcO-63-v4U"/>
                                 </connections>
                             </button>
@@ -82,6 +86,7 @@
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="40"/>
                                 <state key="normal" title="5"/>
                                 <connections>
+                                    <action selector="changeColor:" destination="BYZ-38-t0r" eventType="touchDown" id="Bhd-Cn-njt"/>
                                     <action selector="pushedNum:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b3U-Rb-Jdn"/>
                                 </connections>
                             </button>
@@ -94,6 +99,7 @@
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="40"/>
                                 <state key="normal" title="6"/>
                                 <connections>
+                                    <action selector="changeColor:" destination="BYZ-38-t0r" eventType="touchDown" id="iJQ-7W-8v1"/>
                                     <action selector="pushedNum:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Za-hY-xmC"/>
                                 </connections>
                             </button>
@@ -106,6 +112,7 @@
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="40"/>
                                 <state key="normal" title="7"/>
                                 <connections>
+                                    <action selector="changeColor:" destination="BYZ-38-t0r" eventType="touchDown" id="qOX-fL-edY"/>
                                     <action selector="pushedNum:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s85-Z8-bzf"/>
                                 </connections>
                             </button>
@@ -118,6 +125,7 @@
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="40"/>
                                 <state key="normal" title="8"/>
                                 <connections>
+                                    <action selector="changeColor:" destination="BYZ-38-t0r" eventType="touchDown" id="glW-km-yzn"/>
                                     <action selector="pushedNum:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aCI-Ar-FX9"/>
                                 </connections>
                             </button>
@@ -130,6 +138,7 @@
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="40"/>
                                 <state key="normal" title="9"/>
                                 <connections>
+                                    <action selector="changeColor:" destination="BYZ-38-t0r" eventType="touchDown" id="rZ1-ru-skz"/>
                                     <action selector="pushedNum:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pjE-DE-EzD"/>
                                 </connections>
                             </button>
@@ -142,7 +151,8 @@
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="40"/>
                                 <state key="normal" title="0"/>
                                 <connections>
-                                    <action selector="pushedZero" destination="BYZ-38-t0r" eventType="touchUpInside" id="A6j-4l-Gb8"/>
+                                    <action selector="changeColor:" destination="BYZ-38-t0r" eventType="touchDown" id="F3z-ZA-EOe"/>
+                                    <action selector="pushedZero:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8wN-h9-e6p"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yMb-Ew-Djj">
@@ -154,6 +164,7 @@
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="40"/>
                                 <state key="normal" title="-"/>
                                 <connections>
+                                    <action selector="changeColor:" destination="BYZ-38-t0r" eventType="touchDown" id="ILX-p6-uP7"/>
                                     <action selector="pushedOperator:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gvr-lq-z6Y"/>
                                 </connections>
                             </button>
@@ -166,6 +177,7 @@
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="40"/>
                                 <state key="normal" title="×"/>
                                 <connections>
+                                    <action selector="changeColor:" destination="BYZ-38-t0r" eventType="touchDown" id="jI2-wy-pF9"/>
                                     <action selector="pushedOperator:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4HP-2e-ppz"/>
                                 </connections>
                             </button>
@@ -178,6 +190,7 @@
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="40"/>
                                 <state key="normal" title="÷"/>
                                 <connections>
+                                    <action selector="changeColor:" destination="BYZ-38-t0r" eventType="touchDown" id="OD4-Hv-IYE"/>
                                     <action selector="pushedOperator:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u5Y-ZL-HfM"/>
                                 </connections>
                             </button>
@@ -190,7 +203,8 @@
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="40"/>
                                 <state key="normal" title="AC"/>
                                 <connections>
-                                    <action selector="pushedAC" destination="BYZ-38-t0r" eventType="touchUpInside" id="1S4-S3-C7q"/>
+                                    <action selector="changeColor:" destination="BYZ-38-t0r" eventType="touchDown" id="1GI-Yb-Pby"/>
+                                    <action selector="pushedAC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5g9-UG-0PE"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0G-8a-DBa">
@@ -202,6 +216,7 @@
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="40"/>
                                 <state key="normal" title="+"/>
                                 <connections>
+                                    <action selector="changeColor:" destination="BYZ-38-t0r" eventType="touchDown" id="gTG-2N-ezH"/>
                                     <action selector="pushedOperator:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pRk-bl-Oxh"/>
                                 </connections>
                             </button>
@@ -214,7 +229,8 @@
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="40"/>
                                 <state key="normal" title="="/>
                                 <connections>
-                                    <action selector="pushedEqual" destination="BYZ-38-t0r" eventType="touchUpInside" id="RAl-xc-HdH"/>
+                                    <action selector="changeColor:" destination="BYZ-38-t0r" eventType="touchDown" id="2im-xw-PsK"/>
+                                    <action selector="pushedEqual:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S5O-SO-uT1"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ql9-7C-mEe">
